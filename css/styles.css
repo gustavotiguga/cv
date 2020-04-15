@@ -5,19 +5,45 @@ body {
   text-align: center;
 }
 
+.top-container {
+  color: #fff;
+  position: relative;
+}
+
+.renewableEnergy-bg {
+  width: 100%;
+}
+
 h1 {
-  color: #66BFBF;
+  color: #fff;
   font-family: 'Tangerine', cursive;
-  font-size: 5.5rem;
-  margin: 150px auto 0 auto;
+  font-size: 7vw;
+  position: absolute;
+  top: 1.5vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.whoami {
+  color: #fff;
+  font-size: 1.8vw;
+  position: absolute;
+  top: 10vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h2 {
   color: #66BFBF;
-  font-size: 1.5rem;
   font-weight: normal;
-  margin: 20px auto 40px auto;
-  position: relative;
+}
+
+/* .middle-container {
+  color: #E40514E;
+  margin: 20px auto;
+} */
+.welcome {
+  margin-bottom: 4vw;
 }
 
 h3 {
@@ -37,12 +63,6 @@ p {
   margin: 20px auto;
 }
 
-.top-container {
-  background-color: #EAF6F6;
-  position: relative;
-  padding-top: 10px;
-}
-
 .profile-img {
   height: 200px;
   margin: 0 auto 20px auto;
@@ -52,25 +72,6 @@ p {
 .intro {
   margin: auto;
   width: 30%;
-}
-
-.top-cloud {
-  /*display: block;*/
-  margin: 40px auto;
-  position: absolute;
-  right: 25%;
-  top: 30px;
-}
-
-.bottom-cloud {
-  display: block;
-  position: relative;
-  left: 25%;
-}
-
-.mountain-png {
-  position: relative;
-    bottom: 40px;
 }
 
 .skill-row {
@@ -90,11 +91,6 @@ p {
   float: right;
   margin-left: 10px;
   width: 20%;
-}
-
-.middle-container {
-  color: #E40514E;
-  margin: 60px auto;
 }
 
 .contact-me {
