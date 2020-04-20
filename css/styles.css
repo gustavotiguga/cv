@@ -5,45 +5,16 @@ body {
   text-align: center;
 }
 
-.top-container {
-  color: #fff;
-  position: relative;
-}
-
-.renewableEnergy-bg {
-  width: 100%;
-}
-
 h1 {
   color: #fff;
   font-family: 'Tangerine', cursive;
-  font-size: 7vw;
-  position: absolute;
-  top: 1.5vw;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.whoami {
-  color: #fff;
-  font-size: 1.8vw;
-  position: absolute;
-  top: 10vw;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 h2 {
-  color: #66BFBF;
+  color: #11999E;
   font-weight: normal;
-}
-
-/* .middle-container {
-  color: #E40514E;
-  margin: 20px auto;
-} */
-.welcome {
-  margin-bottom: 4vw;
+  padding: 40px;
+  text-align: center;
 }
 
 h3 {
@@ -55,30 +26,164 @@ hr {
   border-color: #66BFBF;
   border-style: dotted none none;
   border-width: 6px;
-  margin: 50px auto;
-  width: 5%;
+  margin: 100px auto 80px;
+  width: 7%;
 }
 
-p {
-  margin: 20px auto;
+.navbar {
+  color: #fff;
+}
+
+.nav-item {
+  width: 200px;
+}
+
+.nav-link {
+  padding: 5px 0;
+}
+
+.lang {
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+  text-align: left;
+}
+
+/* .lang-en {
+  background-color: transparent;
+  opacity: 0.5;
+  position: absolute;
+  right: 70px;
+  top: 20px;
+  width: auto;
+}
+
+.lang-pt {
+  background-color: transparent;
+  opacity: 0.5;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  width: auto;
+} */
+.top-container {
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.greeting {
+  position: absolute;
+  left: 50%;
+  top: 110px;
+  transform: translate(-50%, -50%);
+}
+
+.hello {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.me {
+  font-size: 4.5rem;
+}
+
+.renewableEnergy-bg {
+  width: 100%;
+}
+
+.middle-container {
+  margin: auto 15%;
+  text-align: center;
 }
 
 .profile-img {
+  border-radius: 100%;
   height: 200px;
-  margin: 0 auto 20px auto;
+  margin: 30px auto;
   position: relative;
 }
 
-.intro {
-  margin: auto;
-  width: 30%;
+.about-me {
+  text-align: left;
+  line-height: 1;
+  margin: 40px 0;
 }
 
-.skill-row {
-  margin: 40px auto 100px auto;
-  line-height: 1.5;
+.intro {
+  margin: 20px 0 80px;
+}
+
+.cv {
+  margin: 0 10%;
   text-align: left;
-  width: 50%;
+}
+
+.hr-cv {
+  border-color: #66BFBF;
+  border-style: solid none none;
+  border-width: 1px;
+  margin: 100px auto 80px;
+  width: 20%;
+}
+
+.job-employer {
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 0 40px;
+  text-align: left;
+}
+
+.job-location {
+  color: #000;
+  margin: 0;
+  padding: 0 40px 0 0;
+  text-align: right;
+}
+
+.job-position {
+  color: #11999E;
+  margin: 0;
+  padding: 0 0 10px 40px;
+  text-align: left;
+}
+
+.job-date {
+  color: #11999E;
+  font-style: italic;
+  margin: 0;
+  padding: 0 40px 0 0;
+  text-align: right;
+}
+
+.job-des {
+  color: #11999E;
+  margin: 20px 0 0;
+  padding: 0 0 0 80px;
+}
+
+.skill-cat {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skill-icon {
+  color: #66BFBF;
+  font-size: 3rem;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+.skill-des {
+  color: #11999E;
+
+  margin: 0;
+  padding: 0 0 0 40px;
 }
 
 .engineering-icon {
@@ -93,10 +198,29 @@ p {
   width: 20%;
 }
 
-.contact-me {
+.contact-info {
+  color: #11999E;
   margin-top: 40px;
 }
 
+.social-media {
+  margin: 20px 20px 60px;
+  text-align: center;
+  /*  */
+}
+
+.social-icon {
+  color: #66BFBF;
+  font-size: 3vw;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.social-icon:hover {
+  color: #11999E;
+}
+
+/* Contact-me button (currently commented out) */
 .btn {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -114,24 +238,84 @@ p {
   margin-top: 30px;
 }
 
-.bottom-container {
+.footer {
   background-color: #66BFBF;
-  margin-top: 20px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .footer-link {
-  color: #11999E;
-  margin: 20px;
+  color: #EAF6F6;
+  /* padding: 10px; */
   text-decoration: none;
 }
 
 .footer-link:hover {
-  color: #EAF6F6;
+  color: #11999E;
+  text-decoration: none;
 }
 
 .copyright {
   color: #EAF6F6;
   font-size: 0.75em;
   margin: 20px auto 0 auto;
+}
+
+@media (max-width: 992px) {
+  .greeting {
+    position: absolute;
+    top: 80px;
+  }
+
+  .hello {
+    font-size: 1.2rem;
+  }
+
+  .me {
+    font-size: 3.5rem;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .intro {
+    margin: 20px 40px 60px;
+  }
+
+  .job {
+    padding: 2px 0;
+    text-align: center;
+  }
+
+  .job-date {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .greeting {
+    position: absolute;
+    top: 60px;
+  }
+
+  .hello {
+    font-size: 1rem;
+  }
+
+  .me {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .job {
+    padding: 2px 0;
+    text-align: center;
+  }
+
+  .job-date {
+    margin-bottom: 20px;
+  }
 }
