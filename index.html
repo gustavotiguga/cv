@@ -3,60 +3,346 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gustavo's Website</title>
+  <title>Gustavo G. P.</title>
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+
+  <!-- CSS Styles -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/letter-g.png"
 </head>
 
 <body>
-  <div class="top-container">
+  <nav class="navbar fixed-top navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-left" id="navbarTop">
+
+      <!-- Toggler Navigation -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#homepage">Home</a>
+        </li>
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#profile">About me</a>
+        </li>
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#interests">Hobbies & Interests</a>
+        </li>
+        <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#contact-me">Get in Touch</a>
+        </li>
+        <!-- Languages -->
+        <li class="nav-item dropdown ml-auto">
+          <a class="nav-link dropdown-toggle" href="#" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+          </a>
+          <div class="dropdown-menu lang" aria-labelledby="lang">
+            <a class="nav-link" href="#">en-🇺🇸</a>
+            <a class="nav-link" href="#">pt-🇧🇷</a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+  </nav>
+
+
+  <div class="top-container" id="homepage">
     <img class="renewableEnergy-bg" src="images/renewableEnergy-bg.jpg" alt="background-img">
-    <h1>I'm Gustavo</h1>
-    <h2 class="whoami">and I'm an engineer.</h2>
+    <!-- <a class="language-en" href="#">🇺🇸</a>
+    <a class="language-pt" href="#">🇧🇷</a> -->
+    <div class="greeting">
+      <h2 class="hello">Hello,</h2>
+      <h1 class="me">I'm Gustavo</h1>
+    </div>
+
   </div>
 
-  <div class="middle-container">
+  <hr>
 
-    <div class="profile">
-      <h2 class="welcome">Welcome to my webpage!</h2>
-      <img class="profile-img" src="images/profile_picture.jpg" alt="profile-picture" style="border-radius: 100%;">
-      <p class="intro">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+  <section class="middle-container">
+
+    <div id="profile">
+      <h2>Welcome to my webpage!</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="profile-img" src="images/profile_picture.jpg" alt="profile-picture">
+        </div>
+        <div class="col-lg-6 about-me">
+          <p><strong>Name: </strong>Gustavo Gomes Pereira</p>
+          <p><strong>Profession: </strong>Engineer</p>
+          <p><strong>Location: </strong>Barcelona</p>
+          <p><strong>Nationality: </strong>Brazil</p>
+          <p><strong>Languages: </strong>🇺🇸 🇧🇷 🇪🇸</p>
+        </div>
+      </div>
+
+      <p class="intro"><em>I am a driven engineer striving to use technology and innovation to advance
+          the sustainable energy industry, address climate change, improve energy access and reduce inequality.</em></p>
     </div>
 
     <hr>
 
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="engineering-icon" src="images/engineering-icon.png" alt="engineering-icon">
-        <h3>Lorem & Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-      </div>
-      <div class="skill-row">
-        <img class="analyst-icon" src="images/analyst-icon.png" alt="analyst-icon">
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-      </div>
-    </div>
+    <div class="cv">
 
-    <hr>
+      <div id="education">
+        <h2>Education</h2>
+        <p><em>Master: Sustainable Energy Systems (InnoEnergy double-degree):</em></p>
+        <ul>
+          <li>Universitat Politecnica de Catalunya (UPC) - Barcelona, Spain</li>
+          <ul>
+            <li>
+              <p>Master: Energy Engineering 2019-2020</p>
+            </li>
+          </ul>
+          <li>KTH Royal Institute of Technology - Stockholm, Sweden</li>
+          <ul>
+            <li>
+              <p>MSc: Sustainable Energy Engineering 2019-2020</p>
+            </li>
+          </ul>
+        </ul>
+        <p><em>Bachelor degrees:</em></p>
+        <ul>
+          <li>Florida International University (FIU) - Miami, USA</li>
+          <ul>
+            <li>BSc: Computer Engineering 2009-2014</li>
+            <li>BBA: Finance 2010-2014</li>
+          </ul>
+        </ul>
+      </div>
 
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="contact.html">CONTACT ME</a>
+      <hr>
+
+      <div id="experience">
+        <h2>Experience</h2>
+
+        <!-- Job 1 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <p class=" job job-employer">EIT INNOENERGY</p>
+            <p class="job job-position">Project Associate</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="job job-location">Stockholm, Sweden</p>
+            <p class="job job-date">Feb 2019 – Sep 2019</p>
+          </div>
+        </div>
+        <ul class="job-des">
+          <li>
+            <p>Business analytics</p>
+          </li>
+          <li>
+            <p>Digital content creation</p>
+          </li>
+          <li>
+            <p>Reporting</p>
+          </li>
+        </ul>
+
+        <hr class="hr-cv">
+
+        <!-- Job 2 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <p class=" job job-employer">GREENELY</p>
+            <p class="job job-position">Summer Intern</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="job job-location">Stockholm, Sweden</p>
+            <p class="job job-date">Jun 2019 – Aug 2019</p>
+          </div>
+        </div>
+        <ul class="job-des">
+          <li>
+            <p>Data analytics</p>
+          </li>
+          <li>
+            <p>Business development</p>
+          </li>
+          <li>
+            <p>User Engagement</p>
+          </li>
+        </ul>
+
+        <hr class="hr-cv">
+
+        <!-- Job 3 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <p class=" job job-employer">PRIMO INVESTMENT ADVISORS</p>
+            <p class="job job-position">Chief Investment Officer</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="job job-location">Nassau, Bahamas</p>
+            <p class="job job-date">Mar 2017 – Apr 2018</p>
+          </div>
+        </div>
+        <ul class="job-des">
+          <li>
+            <p>Wealth management</p>
+          </li>
+          <li>
+            <p>Trader and strategist</p>
+          </li>
+          <li>
+            <p>Risk management</p>
+          </li>
+        </ul>
+
+        <hr class="hr-cv">
+
+        <!-- Job 4 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <p class=" job job-employer">PRIMO INVESTMENT ADVISORS </p>
+            <p class="job job-position">Senior Financial Analyst</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="job job-location">Fort Lauderdale, USA</p>
+            <p class="job job-date">Dec 2015 – Feb 2017</p>
+          </div>
+        </div>
+        <ul class="job-des">
+          <li>
+            <p>Portfolio management</p>
+          </li>
+          <li>
+            <p>Investment strategy</p>
+          </li>
+          <li>
+            <p>Compliance</p>
+          </li>
+        </ul>
+
+        <hr class="hr-cv">
+
+        <!-- Job 5 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <p class=" job job-employer">PRIMO INVESTMENT ADVISORS </p>
+            <p class="job job-position">Financial Analyst</p>
+          </div>
+          <div class="col-lg-6">
+            <p class="job job-location">Fort Lauderdale, USA</p>
+            <p class="job job-date">Jan 2010 – Dec 2015</p>
+          </div>
+        </div>
+        <ul class="job-des">
+          <li>
+            <p>Trader (stocks, bonds & derivatives)</p>
+          </li>
+          <li>
+            <p>Investment analysis</p>
+          </li>
+          <li>
+            <p>Reconciliation & compliance</p>
+          </li>
+        </ul>
+
+
+      </div>
+
+      <hr>
+
+      <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="row">
+
+          <div class="col-lg-4">
+            <p class="skill-icon"><span class="fas fa-globe"></span></p>
+            <p class="skill-cat">Languages</p>
+            <ul class="skill-des">
+              <li>
+                <p>English (fluent)</p>
+              </li>
+              <li>
+                <p>Portuguese (native)</p>
+              </li>
+              <li>
+                <p>Spanish (proficient)</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <p class="skill-icon"><span class="fas fa-laptop-code"></span></p>
+            <p class="skill-cat">Computer</p>
+            <ul class="skill-des">
+              <li>
+                <p>Office (advanced)</p>
+              </li>
+              <li>
+                <p>Matlab/Simulink</p>
+              </li>
+              <li>
+                <p>CAD (familiar)</p>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-4">
+            <p class="skill-icon"><span class="fas fa-cubes"></span></p>
+            <p class="skill-cat">Programming</p>
+            <ul class="skill-des">
+              <li>
+                <p>Front-end</p>
+              </li>
+              <li>
+                <p>Python</p>
+              </li>
+              <li>
+                <p>Java</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+
+  <hr>
+
+
+  <section class="bottom-container" id="contact-me"></section>
+
+  <div class="contact-info">
+    <h2>Get in Touch</h2>
+    <div class="social-media">
+      <a class="social-icon" href="https://www.linkedin.com/in/gustavogpereira/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+      <a class="social-icon" href="https://twitter.com/gustavotiguga" target="_blank"><span class="fab fa-twitter social"></span></a>
     </div>
   </div>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/gustavogpereira/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/gustavotiguga">Twitter</a>
-    <!--<a class="footer-link" href="https://www.appbrewery.co/">Website</a>-->
-    <p class="copyright"> © 2020 Gustavo G. Pereira.</p>
+  <div class="footer">
+    <a class="footer-link" href="#home"> © 2020 Gustavo G. Pereira.</a>
   </div>
+
+  </section>
 
 </body>
 
