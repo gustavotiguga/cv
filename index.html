@@ -17,8 +17,7 @@
   <!-- CSS Styles -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Tangerine&display=swap">
-  <link rel="icon" href="images/letter-g.png"
-</head>
+  <link rel="icon" href="images/letter-g.png" </head>
 
 <body>
   <nav class="navbar fixed-top navbar-light">
@@ -45,14 +44,28 @@
         <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
           <a class="nav-link" href="#skills">Skills</a>
         </li>
+        <!-- <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link" href="#independentWork">Independent Work</a>
+        </li> -->
+
+        <li class="nav-item dropdown mr-auto" data-toggle="collapse" data-target="#navbarTop">
+          <a class="nav-link dropdown-toggle" href="#" id="indep" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Independent Work
+          </a>
+          <div class="dropdown-menu lang text-center" aria-labelledby="indep">
+            <a class="nav-link" href="#independentWork">Volunteering</a>
+            <a class="nav-link" href="#moocs">Online Courses</a>
+          </div>
+        </li>
+
         <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
-          <a class="nav-link" href="#interests">Hobbies & Interests</a>
+          <a class="nav-link" href="#hobbies">Hobbies & Interests</a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target="#navbarTop">
           <a class="nav-link" href="#contact-me">Get in Touch</a>
         </li>
         <!-- Languages -->
-        <li class="nav-item dropdown mr-auto">
+        <!-- <li class="nav-item dropdown mr-auto">
           <a class="nav-link dropdown-toggle" href="#" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Language
           </a>
@@ -60,7 +73,7 @@
             <a class="nav-link" href="#">en-🇺🇸</a>
             <a class="nav-link" href="#">pt-🇧🇷</a>
           </div>
-        </li>
+        </li> -->
       </ul>
 
     </div>
@@ -91,8 +104,8 @@
         </div>
         <div class="col-lg-6 about-me">
           <p><strong>Name: </strong>Gustavo Gomes Pereira</p>
-          <p><strong>Profession: </strong>Engineer</p>
-          <p><strong>Location: </strong>Barcelona</p>
+          <p><strong>Profession: </strong>Energy engineer</p>
+          <p><strong>Location: </strong>Barcelona, Spain</p>
           <p><strong>Nationality: </strong>Brazil</p>
           <p><strong>Languages: </strong>🇺🇸 🇧🇷 🇪🇸</p>
         </div>
@@ -108,6 +121,59 @@
 
       <div id="education">
         <h2>Education</h2>
+        <!-- Master -->
+        <h5 class="degree">Master: Sustainable Energy Systems (InnoEnergy double-degree)</h5>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="job job-position">Master: Energy Engineering</p>
+            <p class="job job-employer">Universitat Politecnica de Catalunya (UPC)</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="job job-date">2019 – 2020</p>
+            <p class="job job-location">Barcelona, Spain</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="job job-position">MSc: Sustainable Energy Engineering</p>
+            <p class="job job-employer">KTH Royal Institute of Technology</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="job job-date">2018 – 2019</p>
+            <p class="job job-location">Stockholm, Sweden</p>
+          </div>
+        </div>
+
+        <hr class="hr-cv">
+
+        <!-- Bachelor -->
+        <h5 class="degree">Bachelor Degrees</h5>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="job job-position">BSc: Computer Engineering</p>
+            <p class="job job-employer">Florida International University (FIU)</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="job job-date">2009 – 2014</p>
+            <p class="job job-location">Miami, USA</p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="job job-position">BBA: Finance</p>
+            <p class="job job-employer">Florida International University (FIU)</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="job job-date">2010 – 2014</p>
+            <p class="job job-location">Miami, USA</p>
+          </div>
+        </div>
+
+        <!-- Education (old)
         <p><em>Master: Sustainable Energy Systems (InnoEnergy double-degree):</em></p>
         <ul>
           <li>Universitat Politecnica de Catalunya (UPC) - Barcelona, Spain</li>
@@ -123,6 +189,9 @@
             </li>
           </ul>
         </ul>
+
+        <hr class="hr-cv">
+
         <p><em>Bachelor degrees:</em></p>
         <ul>
           <li>Florida International University (FIU) - Miami, USA</li>
@@ -131,7 +200,7 @@
             <li>BBA: Finance 2010-2014</li>
           </ul>
         </ul>
-      </div>
+      </div> -->
 
       <hr>
 
@@ -141,12 +210,12 @@
         <!-- Job 1 -->
         <div class="row">
           <div class="col-lg-6">
-            <p class=" job job-employer">EIT INNOENERGY</p>
-            <p class="job job-position">Project Associate</p>
+            <h5 class="job job-position">Project Associate</h5>
+            <p class="job job-employer">EIT INNOENERGY</p>
           </div>
           <div class="col-lg-6">
-            <p class="job job-location">Stockholm, Sweden</p>
             <p class="job job-date">Feb 2019 – Sep 2019</p>
+            <p class="job job-location">Stockholm, Sweden</p>
           </div>
         </div>
         <ul class="job-des">
@@ -166,12 +235,12 @@
         <!-- Job 2 -->
         <div class="row">
           <div class="col-lg-6">
-            <p class=" job job-employer">GREENELY</p>
-            <p class="job job-position">Summer Intern</p>
+            <h5 class="job job-position">Summer Intern</h5>
+            <p class="job job-employer">GREENELY</p>
           </div>
           <div class="col-lg-6">
-            <p class="job job-location">Stockholm, Sweden</p>
             <p class="job job-date">Jun 2019 – Aug 2019</p>
+            <p class="job job-location">Stockholm, Sweden</p>
           </div>
         </div>
         <ul class="job-des">
@@ -191,12 +260,12 @@
         <!-- Job 3 -->
         <div class="row">
           <div class="col-lg-6">
-            <p class=" job job-employer">PRIMO INVESTMENT ADVISORS</p>
-            <p class="job job-position">Chief Investment Officer</p>
+            <h5 class="job job-position">Chief Investment Officer</h5>
+            <p class="job job-employer">PRIMO INVESTMENT ADVISORS</p>
           </div>
           <div class="col-lg-6">
-            <p class="job job-location">Nassau, Bahamas</p>
             <p class="job job-date">Mar 2017 – Apr 2018</p>
+            <p class="job job-location">Nassau, Bahamas</p>
           </div>
         </div>
         <ul class="job-des">
@@ -216,12 +285,12 @@
         <!-- Job 4 -->
         <div class="row">
           <div class="col-lg-6">
-            <p class=" job job-employer">PRIMO INVESTMENT ADVISORS </p>
-            <p class="job job-position">Senior Financial Analyst</p>
+            <h5 class="job job-position">Senior Financial Analyst</h5>
+            <p class="job job-employer">PRIMO INVESTMENT ADVISORS </p>
           </div>
           <div class="col-lg-6">
-            <p class="job job-location">Fort Lauderdale, USA</p>
             <p class="job job-date">Dec 2015 – Feb 2017</p>
+            <p class="job job-location">Fort Lauderdale, USA</p>
           </div>
         </div>
         <ul class="job-des">
@@ -241,12 +310,13 @@
         <!-- Job 5 -->
         <div class="row">
           <div class="col-lg-6">
-            <p class=" job job-employer">PRIMO INVESTMENT ADVISORS </p>
-            <p class="job job-position">Financial Analyst</p>
+            <h5 class="job job-position">Financial Analyst</h5>
+            <p class="job job-employer">PRIMO INVESTMENT ADVISORS </p>
+
           </div>
           <div class="col-lg-6">
-            <p class="job job-location">Fort Lauderdale, USA</p>
             <p class="job job-date">Jan 2010 – Dec 2015</p>
+            <p class="job job-location">Fort Lauderdale, USA</p>
           </div>
         </div>
         <ul class="job-des">
@@ -272,7 +342,7 @@
 
           <div class="col-lg-4">
             <p class="skill-icon"><span class="fas fa-globe"></span></p>
-            <p class="skill-cat">Languages</p>
+            <h5>Languages</h5>
             <ul class="skill-des">
               <li>
                 <p>English (fluent)</p>
@@ -288,13 +358,13 @@
 
           <div class="col-lg-4">
             <p class="skill-icon"><span class="fas fa-laptop-code"></span></p>
-            <p class="skill-cat">Computer</p>
+            <h5>Computer</h5>
             <ul class="skill-des">
               <li>
                 <p>Office (advanced)</p>
               </li>
               <li>
-                <p>Matlab/Simulink</p>
+                <p>Matlab / Simulink</p>
               </li>
               <li>
                 <p>CAD (familiar)</p>
@@ -305,7 +375,7 @@
 
           <div class="col-lg-4">
             <p class="skill-icon"><span class="fas fa-cubes"></span></p>
-            <p class="skill-cat">Programming</p>
+            <h5>Programming</h5>
             <ul class="skill-des">
               <li>
                 <p>Front-end</p>
@@ -318,10 +388,292 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
 
+      <hr>
+
+      <div id="independentWork">
+        <h2>Independent Work</h2>
+
+        <h5 class="volunteer volunteering" id="volunteering">Volunteering</h5>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="volunteer volunteer-org">Ingenjörer Utan Gränser (Engineers Without Borders - Sweden)</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="volunteer volunteer-date">May 2019 - Present</p>
+          </div>
+        </div>
+        <p class="volunteer volunteer-des">Volunteer responsible for the deployment of
+          a solar powered irrigation system for a farming project in Mbodiene,
+          Senegal. By incorporating sustainable technologies and a circular-economy
+          approach, our team, together with all involved partners, aims to empower
+          the local community by transforming an area of 10 hectares into a productive,
+          locally shared area for agriculture and farming.</p>
+
+        <br>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="volunteer volunteer-org">InnoEnergy CommUnity Leader</p>
+          </div>
+          <div class="col-lg-4">
+            <p class="volunteer volunteer-date">Nov 2018 – Jul 2019</p>
+          </div>
+        </div>
+        <p class="volunteer volunteer-des">A committed and passionate volunteer
+          helping bring together a 'CommUnity' of enthusiastic students,
+          professionals, citizens and institutions willing to collaborate and
+          work together to empower oneanother to promote the development of
+          sustainable energy solutions worldwide.</p>
+
+        <hr class="hr-cv">
+
+        <h5 class="volunteer volunteering" id="moocs">Online Courses</h5>
+
+        <!-- MOOC #1 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://drive.google.com/open?id=18nbuH-kZespVOjN3M4Q4XrG-7XFec6Al" target="_blank">
+                  Nord Pool AS: The Physical and Financial Power Market</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Summer 2019</p>
+          </div>
+        </div>
+
+        <!-- MOOC #2 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://drive.google.com/file/d/10YV0ltZ7ZIlPEVpd7X1iRVaTMavURXbe/view?usp=sharing" target="_blank">
+                  iSE: Battery storage - E-mobility</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Spring 2019</p>
+          </div>
+        </div>
+
+        <!-- MOOC #3 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://drive.google.com/file/d/10bwHOHdwkqdewY7gDImB8gJSXBCz3Juz/view?usp=sharing" target="_blank">
+                  iSE: Energy Storage: The Battery Revolution</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Spring 2019</p>
+          </div>
+        </div>
+
+        <!-- MOOC #4 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://www.futurelearn.com/certificates/f3s74ki" target="_blank">
+                  FutureLearn: Blockchain in the Energy Sector</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Autumn 2018</p>
+          </div>
+        </div>
+
+        <!-- MOOC #5 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://www.coursera.org/account/accomplishments/certificate/F9UWWE76KFTJ" target="_blank">
+                  Duke: Renewable Energy and Green Building Entrepreneurship</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Summer 2018</p>
+          </div>
+        </div>
+
+        <!-- MOOC #6 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://courses.edx.org/certificates/99c23fe982bc4647a9d00215343e4a82" target="_blank">
+                  AMSx Institute: Sustainable Urban Development</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Summer 2018</p>
+          </div>
+        </div>
+
+        <!-- MOOC #7 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://courses.edx.org/certificates/e7a7035c8314495cb932a587f19afc69" target="_blank">
+                  EPFLx: Technology Innovation for Sustainable Development</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Spring 2018</p>
+          </div>
+        </div>
+
+        <!-- MOOC #8 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://courses.edx.org/certificates/97b83dfa2755459d92517537a9cacfa5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bk8NM5qXcTG2Q2d4G0HUPFw%3D%3D" target="_blank">
+                  HarvardX: Energy Within Environmental Constraints</a></li>
+            </ul>
+          </div class="mooc-list">
+          <div class="col-lg-3">
+            <p class="mooc-date">Spring 2018</p>
+          </div>
+        </div>
+
+        <!-- MOOC #9 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://courses.edx.org/certificates/289832001bb04803aaa7f7a55f52b558" target="_blank">
+                  DelftX: Solar Energy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Autumn 2017</p>
+          </div>
+        </div>
+
+        <!-- MOOC #10 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://www.coursera.org/account/accomplishments/certificate/4QN6UVX8KYWC" target="_blank">
+                  Duke: Electric Industry Operations and Markets</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Autumn 2017</p>
+          </div>
+        </div>
+
+        <!-- MOOC #11 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://courses.edx.org/certificates/da6997bd96d14442a0235796bbe8364d" target="_blank">
+                  DelftX: Sustainable Energy – Design a Renewable Future</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Autumn 2017</p>
+          </div>
+        </div>
+
+        <!-- MOOC #12 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://s3.amazonaws.com/verify.edx.org/downloads/0038f925f67e4762ab9dbffd92f8c3cc/Certificate.pdf" target="_blank">
+                  MITx: The Challenges of Global Poverty</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Spring 2013</p>
+          </div>
+        </div>
+
+        <!-- MOOC #13 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://s3.amazonaws.com/verify.edx.org/downloads/801ada5b82ba49d59a355faebb203cf4/Certificate.pdf" target="_blank">
+                  MITx: Computer Science and Programming</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Autumn 2012</p>
+          </div>
+        </div>
+
+        <!-- MOOC #14 -->
+        <div class="row">
+          <div class="col-lg-9">
+            <ul class="mooc-list">
+              <li><a class="mooc" href="https://s3.amazonaws.com/verify.edx.org/downloads/9ed0b006d50a4eed8032fa7eccaba2c7/Certificate.pdf" target="_blank">
+                  MITx: Circuits and Electronics</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <p class="mooc-date">Autumn 2012</p>
+          </div>
         </div>
 
       </div>
+
+      <hr>
+
+      <div class="interests" id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <div class="row">
+
+          <div class="col-lg-4">
+            <p class="skill-icon"><span class="fas fa-glass-cheers"></span></p>
+            <h5>Leisure</h5>
+            <ul class="interests-list">
+              <li>
+                <p>Friends</p>
+              </li>
+              <li>
+                <p>Music</p>
+              </li>
+              <li>
+                <p>Motorcycles</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <p class="skill-icon"><span class="fab fa-react"></span></p>
+            <h5>Technology</h5>
+            <ul class="interests-list">
+              <li>
+                <p>Coding</p>
+              </li>
+              <li>
+                <p>MOOCs</p>
+              </li>
+              <li>
+                <p>Space Exploration</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <p class="skill-icon"><span class="fas fa-recycle"></span></p>
+            <h5>Sustainability</h5>
+            <ul class="interests-list">
+              <li>
+                <p>Electrification</p>
+              </li>
+              <li>
+                <p>Hydrogen</p>
+              </li>
+              <li>
+                <p>SDGs</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
   </section>
 
   <hr>
