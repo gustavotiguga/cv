@@ -22,12 +22,29 @@ h3 {
   margin: 40px auto 0 auto;
 }
 
+h4 {
+  margin: 20px auto;
+}
+
+h5 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h6 {
+  margin-bottom: 20px;
+}
+
 hr {
   border-color: #66BFBF;
   border-style: dotted none none;
   border-width: 6px;
   margin: 100px auto 80px;
   width: 7%;
+}
+
+ul {
+  color: #11999E;
 }
 
 .navbar {
@@ -67,6 +84,7 @@ hr {
   top: 20px;
   width: auto;
 } */
+
 .top-container {
   color: #fff;
   position: relative;
@@ -105,6 +123,7 @@ hr {
   height: 200px;
   margin: 30px auto;
   position: relative;
+  left: 80px;
 }
 
 .about-me {
@@ -126,35 +145,36 @@ hr {
   border-color: #66BFBF;
   border-style: solid none none;
   border-width: 1px;
-  margin: 100px auto 80px;
+  margin: 60px auto;
   width: 20%;
 }
 
-.job-employer {
-  color: #000;
-  font-weight: bold;
+.degree {
+  margin: 0 0 40px 40px;
+  text-align: left;
+}
+
+.job-position {
   margin: 0;
   padding: 0 0 0 40px;
   text-align: left;
 }
 
-.job-location {
-  color: #000;
+.job-date {
+  color: #40514E;
   margin: 0;
   padding: 0 40px 0 0;
   text-align: right;
 }
 
-.job-position {
+.job-employer {
   color: #11999E;
   margin: 0;
   padding: 0 0 10px 40px;
-  text-align: left;
 }
 
-.job-date {
+.job-location {
   color: #11999E;
-  font-style: italic;
   margin: 0;
   padding: 0 40px 0 0;
   text-align: right;
@@ -166,36 +186,61 @@ hr {
   padding: 0 0 0 80px;
 }
 
-.skill-cat {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 .skill-icon {
   color: #66BFBF;
   font-size: 3rem;
-  margin: 10px auto 0;
+  margin: 30px auto 0;
   text-align: center;
 }
 
 .skill-des {
   color: #11999E;
-
   margin: 0;
   padding: 0 0 0 40px;
 }
 
-.engineering-icon {
-  float: left;
-  margin-right: 20px;
-  width: 20%;
+.volunteering {
+  margin: 0;
+  padding: 20px 0 40px 40px;
+  text-align: left;
 }
 
-.analyst-icon {
-  float: right;
-  margin-left: 10px;
-  width: 20%;
+.volunteer-org {
+  margin: 0;
+  padding: 0 0 10px 40px;
+}
+
+.volunteer-date {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0 40px 0 0;
+  text-align: right;
+}
+
+.volunteer-des {
+  font-size: 0.8rem;
+  color: #11999E;
+  margin: 0;
+  padding: 0 0 10px 40px;
+}
+
+.mooc-list {
+  margin-bottom: 10px;
+}
+
+.mooc {
+  color: #11999E;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+.mooc-date {
+  color: #11999E;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0 40px 0 0;
+  text-align: right;
 }
 
 .contact-info {
@@ -211,7 +256,7 @@ hr {
 
 .social-icon {
   color: #66BFBF;
-  font-size: 3vw;
+  font-size: 3rem;
   margin: 0;
   padding: 0 20px;
 }
@@ -236,6 +281,10 @@ hr {
   cursor: pointer;
   text-align: center;
   margin-top: 30px;
+}
+
+.interests-list {
+  margin-left: 30px;
 }
 
 .footer {
@@ -278,8 +327,17 @@ hr {
     text-align: center;
   }
 
+  .profile-img {
+    position: static;
+  }
+
   .intro {
     margin: 20px 40px 60px;
+  }
+
+  .degree {
+    margin: 20px 0 40px 0;
+    text-align: center;
   }
 
   .job {
@@ -287,8 +345,44 @@ hr {
     text-align: center;
   }
 
-  .job-date {
+  .job-location {
     margin-bottom: 20px;
+  }
+
+  .skill-des {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .volunteering {
+    margin: 40px 0;
+  }
+
+  .volunteer {
+    padding: 4px 0;
+    text-align: center;
+  }
+
+  .mooc-list {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 20px 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mooc-date {
+    font-style: italic;
+    padding: 0;
+    text-align: center;
+  }
+
+  .interests-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 }
 
@@ -306,7 +400,16 @@ hr {
     font-size: 2rem;
   }
 
+  .profile-img {
+    position: static;
+  }
+
   .about-me {
+    text-align: center;
+  }
+
+  .degree {
+    margin: 20px 0 40px 0;
     text-align: center;
   }
 
@@ -315,7 +418,39 @@ hr {
     text-align: center;
   }
 
-  .job-date {
+  .job-location {
     margin-bottom: 20px;
+  }
+
+  .skill-des {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .volunteer {
+    padding: 4px 0;
+    text-align: center;
+  }
+
+  .mooc-list {
+    font-weight: bold;
+    list-style-type: none;
+    margin: 20px 0 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mooc-date {
+    font-style: italic;
+    padding: 0;
+    text-align: center;
+  }
+
+  .interests-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 }
