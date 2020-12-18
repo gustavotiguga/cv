@@ -1,2 +1,2 @@
 # cv
-My first webpage as part of the Web Development Udemy Course with Angela Yu
+Webpage created by myself as to present some information about me.
